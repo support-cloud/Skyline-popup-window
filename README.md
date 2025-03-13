@@ -8,6 +8,7 @@ This part of implementation is only for openstack 2023.1 version.
 2. Frontend
 
 Backend part: implement to store data into the DB & fetch details via API 
+
 Frontend Part: Fetch details via API to render & showcase popup window
 
 ## Step1: Add custom function (get_login_record,record_user_login)
@@ -166,7 +167,41 @@ cd /var/lib/kolla/venv/lib/python3.10/site-packages/skyline_apiserver/db/
        ```
     5. restart the skyline api server
 
-  Phase1 Backend Part completed......
+  Phase1 Backend Part completed...!
+
+  ### Step2: Add custom code for index.jsx for skyline console
+
+  1. Navigate to:
+    ```sh
+    cd /skyline-console/src/components/Layout/GlobalHeader/
+    ```
+  2. Download `index.jsx` into the `GlobalHeader' folder.
+
+  3. Precompile the Code
+   ```sh
+   cd /skyline-console
+   ```
+
+  4. Compile the code:
+   ```sh
+   make package
+   ```
+
+  5. Install the updated package:
+     ```sh
+     pip3 install --force-reinstall dist/skyline_console-*.whl
+     ```
+
+  6. Restart the skyline console service
+
+Phase2 Frontend Part completed...!
+
+### Final Output
+
+![image](https://github.com/user-attachments/assets/e3358cb8-d196-4b66-a58c-9eb3c3386684)
+
+     
+     
 
 
 
