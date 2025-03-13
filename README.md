@@ -172,12 +172,12 @@ cd /var/lib/kolla/venv/lib/python3.10/site-packages/skyline_apiserver/db/
   ### Step2: Add custom code for index.jsx for skyline console
 
   1. Navigate to:
-    ```sh
-    cd /skyline-console/src/components/Layout/GlobalHeader/
-    ```
-  2. Download `index.jsx` into the `GlobalHeader' folder.
+     ```sh
+     cd /skyline-console/src/components/Layout/GlobalHeader/
+     ```
+  3. Download `index.jsx` into the `GlobalHeader' folder.
 
-  3. Precompile the Code
+  4. Precompile the Code
    ```sh
    cd /skyline-console
    ```
